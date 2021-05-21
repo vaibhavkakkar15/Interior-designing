@@ -1,0 +1,414 @@
+body{
+  background-color:  #ffffff;
+
+  
+}
+p{
+    cursor:pointer;
+}
+
+
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl{
+    width: 100%;
+    height: 325px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+  font-family: cursive;
+  font-size: 20px;
+}
+
+.color{
+  color:white;
+  text-shadow: 2px 2px 30px white;
+}
+
+#b1{
+ position:absolute;
+  right: 13px;
+  top: 18px;
+  float: right;
+}
+#input{
+ top:18px;
+  position: absolute;
+  right:121px
+ 
+}p{text-align: center;
+  font-size: 78px;
+  font-weight: 700;
+  font-family: cursive;}
+li:hover{
+background-color:white;
+
+border-radius: 5px;
+  }
+
+  body {
+      font-family: Arial, Helvetica, sans-serif;
+  }
+
+  /* header{
+    border: 7px dotted white;
+    padding: 2px;
+    box-shadow: 2px 2px 2px white;
+  } */
+
+ 
+
+  /* Add Zoom Animation */
+  .animate {
+      -webkit-animation: animatezoom 0.6s;
+      animation: animatezoom 0.6s
+  }
+
+  @-webkit-keyframes animatezoom {
+      from {
+          -webkit-transform: scale(0)
+      }
+
+      to {
+          -webkit-transform: scale(1)
+      }
+  }
+
+  @keyframes animatezoom {
+      from {
+          transform: scale(0)
+      }
+
+      to {
+          transform: scale(1)
+      }
+  }
+
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+      span.psw {
+          display: block;
+          float: none;
+      }
+
+      .cancelbtn {
+          width: 100%;
+      }
+  }
+  .shadow { 
+
+      color:gold; 
+      font: bold 82px ;
+      text-shadow: 2px 2px black, 
+                   2px 2px black, 
+                   3px 3px black;
+      -webkit-transition: all 0.12s ease-out;
+      -moz-transition:    all 0.12s ease-out;
+      -ms-transition:     all 0.12s ease-out;
+      -o-transition:      all 0.12s ease-out;
+   }
+   .shadow:hover {
+      position: relative; 
+      top: -3px; 
+      left: -3px; 
+      text-shadow: 1px 1px  #005f69 , 
+                   2px 2px  #005f69,  
+                   3px 3px  #005f69, 
+                   4px 4px  #005f69, 
+                   5px 5px  #005f69, 
+                   6px 6px  #005f69;
+   }
+   .shadow12{
+      font-size: 72px;
+      background: -webkit-linear-gradient(red 45% , blue 70%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* .navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link :hover{
+      background: -webkit-linear-gradient(red 45% , black 70%);
+    } */
+    .shadow1{
+        font-size: 72px;
+        background: -webkit-linear-gradient(red 45% , blue 70%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+     #image{
+        width: 275px;
+        height: 240px;
+        padding: 14px;
+        margin: 17px;
+        border: solid 5px #15d8d4;
+        box-shadow: 7px 8px 12px 9px;
+     }
+
+     li.nav-item.active:hover{
+      background: -webkit-linear-gradient(red 45% , black 70%);
+     }
+
+   
+
+     .navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link{
+        color: white;
+        font-size: x-large;
+        font-family: cursive;
+     }
+     .btn-outline-warning{
+        color: black;
+        border-color: white;
+        font-weight: 700;
+        font-size: initial;
+     }
+
+     section{
+        display: inline-block;
+     }
+
+     #icons{
+         color:black;
+         margin: auto;
+         text-shadow: 2px 2px 2px blue;
+        position:absolute;
+        margin:auto;
+        left:39%;
+        top:34%;
+     }
+
+   
+
+     
+     .wheel{
+         position: absolute;
+         left: 23%;
+         top: 17%;
+         color: red;
+         
+     }
+
+     #footer{
+      height:100%;
+      width:100%;  
+      display: inline-block; 
+     }
+
+
+
+     #footer_image{
+             color: white;
+            font-size: 5.5rem;
+            font-weight: 800;  
+            font-family: cursive;
+            text-shadow: 2px 2px 30px white;
+}
+
+
+        
+
+        
+
+        #about{
+           
+             background-size: cover;
+            width:1254px;
+            height:410px;
+            border-radius:25px;
+            border:2px solid purple;
+            box-shadow: 4px -4px 11px purple;
+            
+        }
+
+
+       
+   
+    p:hover {
+        /* Start the shake animation and make the animation last for 0.5 seconds */
+        animation: shake 0.5s;
+      
+        /* When the animation is finished, start again */
+        animation-iteration-count: infinite;
+      }
+      
+      @keyframes shake {
+        0% { transform: translate(1px, 1px) rotate(0deg); }
+        10% { transform: translate(-1px, -2px) rotate(-1deg); }
+        20% { transform: translate(-3px, 0px) rotate(1deg); }
+        30% { transform: translate(3px, 2px) rotate(0deg); }
+        40% { transform: translate(1px, -1px) rotate(1deg); }
+        50% { transform: translate(-1px, 2px) rotate(-1deg); }
+        60% { transform: translate(-3px, 1px) rotate(0deg); }
+        70% { transform: translate(3px, 1px) rotate(-1deg); }
+        80% { transform: translate(-1px, -1px) rotate(1deg); }
+        90% { transform: translate(1px, 2px) rotate(0deg); }
+        100% { transform: translate(1px, -2px) rotate(-1deg); }
+      }
+
+      .box::after {
+        content: "";
+        border-radius: 5px;
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        opacity: 0;
+        -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+        transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+      }
+      
+      .box:hover {
+        -webkit-transform: scale(1.25, 1.25);
+        transform: scale(1.25, 1.25);
+      }
+      
+      .box:hover::after {
+          opacity: 1;
+      }
+
+      a:visited{
+          color:red;
+      }
+
+      #navbar {
+        overflow: hidden;
+        background-color:white;
+      }
+      
+      /* Navbar links */
+      #navbar ul li  a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px;
+        text-decoration: none;
+      }
+      
+      /* Page content */
+      .content {
+        padding: 16px;
+      }
+      
+      /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+      .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+      
+      /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+      .sticky + .content {
+        padding-top: 60px;
+      }
+
+      .dropbtn {
+        /* background-color: #0044ff; */
+        color: rgb(0, 0, 0);
+        padding: 4px;
+        font-size: 16px;
+        font-weight: 600;
+        border: none;
+        background: none;
+      }
+      
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: white;
+        border-radius: 25px;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(177, 159, 0, 0.2);
+        z-index: 1;
+      }
+      
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        border-radius: 25px;
+        display: block;
+      }
+
+      .dropdown-content :hover{
+        color:white;
+      }
+
+
+      .dropdown-content a:hover{
+        background: -webkit-linear-gradient(red 45% , black 70%);
+      }
+     .navbar-dark .navbar-nav .nav-link {
+        color:white;
+        font-family: cursive;
+        font-size: 20px;
+    }
+      
+      /* .dropdown-content a:hover {background-color: #ddd;} */
+      
+      .dropdown:hover .dropdown-content {display: block;}
+
+
+      /* Three columns side by side */
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Some left and right padding inside the container */
+.container {
+  padding: 0 16px;
+}
+
+/* Clear floats */
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+      
+     

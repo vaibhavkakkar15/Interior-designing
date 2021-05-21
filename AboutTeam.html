@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="MediaQueryAbout.css">
+  <link rel="shortcut icon" type="image/jpg" href="favicon/united.png"/>
+  <script src="About.js"></script>
+  <!-- <link rel="stylesheet" href="My.css"> -->
+  <title>About Team</title>
+  <style>
+
+    body{
+        background-image: url('aboutback.jpg');
+    }
+    /* Three columns side by side */
+.column {
+  float: left;
+  width: 22.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+  margin-top: 20px;
+  margin-left: 90px;
+  border: 4px double #5ce9ff;
+}
+
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Some left and right padding inside the container */
+.container {
+  padding: 0 16px;
+  background: -webkit-linear-gradient(#1d315e 45%,black 70%);
+  color: white;
+  font-family: cursive;
+}
+
+/* Clear floats */
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* .title {
+  color: grey;
+} */
+.title {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  color: red;
+    background: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+h2{
+  text-shadow: 1px 1px 39px white;
+}
+
+.text_shadow{
+      font-size: 72px;
+      background: -webkit-linear-gradient(#30d538 , white );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 600;
+      text-align: center;
+       /* text-shadow: 2px 2px 2px red; */
+       margin: 23px;
+} 
+.topnav {
+  background: -webkit-linear-gradient(white 5%,#1d6f91 55% ,skyblue );
+  overflow: hidden;
+  margin: -10px;
+  border-radius: 8px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 17px 16px;
+  text-decoration: none;
+  font-size: 20px;
+    font-weight: 600;
+
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+/* .topnav a.active {
+  background-color: transparent;
+  color: white;
+} */
+
+.topnav a.active {
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+  </style>
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }</script>
+</head>
+<body>
+  <header>
+    <div class="topnav" id="myTopnav">
+      <a href="index.html" class="active">Home</a>
+      <!-- <a href="#news">News</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">About</a> -->
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    
+    <P class="text_shadow">About Team</P>
+
+  </header>
+              <!-- About Team Section -->
+             <div class="row" id="about_team">
+                <div class="column">
+                  <div class="card">
+                    <img src="about images/samriti.jpg" alt=Samriti" style="width:100%; height:307px;">
+                    <div class="container">
+                      <h2>Samriti</h2>
+                      <p class="title">Developer 1</p>
+                      <p>Designing and integrating the website</p>
+                      <p>sharmasamriti@gmail.com</p>
+                      <p><button class="button">Contact</button></p>
+                    </div>
+                  </div>
+                </div>
+              
+                <div class="column">
+                  <div class="card">
+                    <img src="about images/nishu.jpeg" alt="Nishant" style="width:100%; height:327px;">
+                    <div class="container">
+                      <h2>Nishant chauhan</h2>
+                      <p class="title">Developer 2</p>
+                      <p>Css Javascript jquery</p>
+                      <p>Nishant04@gmail.com</p>
+                      <p><button class="button">Contact</button></p>
+                    </div>
+                  </div>
+                </div>
+              
+                <div class="column">
+                  <div class="card">
+                    <img src="about images/vaibhav.jpeg" alt="Vaibhav Kakkar" style="width:100%; height:312px;">
+                    <div class="container">
+                      <h2>Vaibhav Kakkar</h2>
+                      <p class="title">Developer 3</p>
+                      <p>Css , JavaScript , Jquery</p>
+                      <p>example@example.com</p>
+                      <p><button class="button">Contact</button></p>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+</body>
+</html>

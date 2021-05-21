@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Office design</title>
+  <link rel="shortcut icon" type="image/jpg" href="favicon/conference.png"/>
+<style>
+
+*{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  text-align: center;
+  padding: -3px;
+  border-radius: 0px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+*{
+  margin:0;
+  padding:0;
+  
+}
+
+.container{  padding-top: 20px;
+  padding-bottom: 21px;}
+.body{
+  /* background-color: #111845; */
+  /* background-image: url('office design/h3.jfif'); */
+  background-color: #1955ca;
+  /* background-size: cover; */
+}
+.res{
+  height: 24em;
+  width:90%;
+}
+.background-img{
+  /* background-image: url("https://3.bp.blogspot.com/-piZWCW2uUbg/W2fPXxkWZgI/AAAAAAAAOu0/eydmMjTIqcwLMHEEr2H7imqoRTxMw4o9QCLcBGAs/s1600/among_trees_night_dribbble.png"); */
+  background-image: url('office design/h2.jfif');
+
+  /* height: 400px;
+  width: 800px; */
+  background-repeat: no-repeat;
+  background-size: 82em;
+  margin: 5% auto;
+  padding:20px;
+  border: 1px solid #2a3cad;
+  border-radius: 4px;
+  box-shadow:11px 12px 20px hotpink;
+  position: relative;
+}
+
+.content h2{ font-size:19px;}
+
+.box{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 300px;
+  background: #111845a6;
+  box-sizing: border-box;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgb(23, 32, 90);
+  border: 2px solid #2a3cad;
+  color: white;
+  padding: 20px;
+}
+
+.box:before{
+  content: '';
+  position:absolute;
+  top:0;
+  left:-100%;
+  width:100%;
+  height:100%;
+  background: rgba(255,255,255,0.1);
+  transition:0.5s;
+  pointer-events: none;
+}
+
+.box:hover:before{
+  left:-50%;
+  transform: skewX(-5deg);
+}
+
+
+.box .content{
+  position:absolute;
+  top:15px;
+  left:15px;
+  right:15px;
+  bottom:15px;
+  border:1px solid #f0a591;
+  padding:20px;
+  text-align:center;
+  box-shadow: 0 5px 10px rgb(232 40 177);
+  
+}
+
+.box span{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  box-sizing: border-box;
+  
+}
+
+.box span:nth-child(1)
+{
+  transform:rotate(0deg);
+}
+
+.box span:nth-child(2)
+{
+  transform:rotate(90deg);
+}
+
+.box span:nth-child(3)
+{
+  transform:rotate(180deg);
+}
+
+.box span:nth-child(4)
+{
+  transform:rotate(270deg);
+}
+.ed{
+  font-family: cursive;
+  font-size: 24px;
+  color: pink;
+}
+.box span:before
+{
+  content: '';
+  position: absolute;
+  width:100%;
+  height: 2px;
+  background: #db1cdc;
+  animation: animate 4s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+  transform:scaleX(0);
+  transform-origin: left;
+  }
+  50%
+  {
+    transform:scaleX(1);
+  transform-origin: left;
+  }
+  50.1%
+  {
+    transform:scaleX(1);
+  transform-origin: right;
+    
+  }
+  
+  100%
+  {
+    transform:scaleX(0);
+  transform-origin: right;
+    
+  }
+  
+  
+}
+</style>
+<title>Office Room Designs</title>
+<body>
+<!-- Header -->
+<div class="header">
+  <section class="body">
+    <div class="container">
+      <div class="background-img res">
+        <div class="box">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <div class="content">
+            <p class="ed">Office designs</p>
+            <p >
+              These are areas of the office workspace that have a more traditional type of seating arrangement 
+              where workers are seated very close to one another without any walls or cubicle barriers separating them.
+               Typically, instead of each worker having his or her own individual desk, they share entire long workbenches.
+                
+            <!-- <p><a href="http://www.cakecounter.com/" style="color:#00ffe9;" target="_blank">All our modules are designed to play nicely with responsive of course. At the end of the day it comes down to the theme you use - our code doesn't get in your way.</a></p> -->
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+    <img src="office design/of1.jpg" style="width:100%; height: 270px;">
+    <img src="office design/of2.jfif" style="width:100%; height: 270px;">
+    <img src="office design/of3.jpg" style="width:100%; height: 270x;">
+    <img src="office design/of4.jpg" style="width:100%; height: 270px;">
+    <img src="office design/of5.jfif" style="width:100%; height: 270px;">
+    <img src="office design/of6.jpg"style="width:100%; height: 270px;">
+    <img src="office design/of7.jpg" style="width:100%; height: 270px;">
+    <img src="office design/of8.jfif" style="width:100%; height: 270px;">
+  </div>
+  <div class="column">
+    <img src="office design/of8.jfif" style="width:100%; height: 270px;">
+    <img src="office design/o9.jpg" style="width:100%; height: 270px;">
+    <img src="office design/o10.jfif" style="width:100%; height: 270px;">
+    <img src="office design/o11.jfif" style="width:100%; height: 270px;">  
+    <img src="Office Interiors/o4.jpg" style="width:100%; height: 270px;">
+    <img src="Office Interiors/o7.png" style="width:100%; height: 270px;">
+    <img src="office design/o12.jfif" style="width:100%; height: 270px;">
+    <img src="office design/o13.jfif" style="width:100%; height: 270px;">
+  </div>  
+  <div class="column">
+    <img src="office design/o14.jfif" style="width:100% ; height: 270px;">
+    <img src="office design/o15.jfif" style="width:100% ; height: 270px;">
+    <img src="office design/o16.jfif" style="width:100% ; height: 270px;">
+    <img src="office design/o17.jfif" style="width:100% ; height: 270px;">
+    <img src="office design/o18.jfif" style="width:100% ; height: 270px;">
+    <img src="office design/o19.jfif" style="width:100% ; height: 270px;">
+    <img src="office design/o20.jfif" style="width:100% ; height: 270px;">  
+    <img src="office design/o30.jfif" style="width:100% ; height: 270px;">
+    <!-- <img src="office design/o31.jfif" style="width:100% ; height: 175px;"> -->
+  </div>
+  <div class="column">
+    <img src="office design/o21.jfif" style="width:100% ; height: 270px;">
+    <img src="office design/o22.jfif" style="width:100% ; height: 270px;">
+    <img src="office design/o23.jfif" style="width:100% ; height: 270px;">
+    <img src="office design/o24.jfif" style="width:100% ; height: 270px;">
+    <img src="office design/o25.jfif" style="width:100% ; height: 270px;">
+    <img src="office design/o26.jfif" style="width:100% ; height: 270px;">
+    <img src="office design/o27.jpeg" style="width:100%; height:270px;">
+    <img src="office design/o29.jfif" style="width:100%; height:270px;">
+  </div>  
+  
+  
+</div>
+
+</body>
+</html>

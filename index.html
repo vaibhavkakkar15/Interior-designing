@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myproject</title>
+    <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="My.css" />
+    <script type="text/javascript" src="My.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="image/jpg" href="favicon/interior-design.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid" style="background-image:url('head.jpg');margin-top: 0px; background-size: 435px; ">
+            <nav class="navbar navbar-expand-sm   navbar-dark" id="nav1">
+                <ul class="navbar-nav" class="names">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#" class="color">Home</a>
+                    </li>&emsp;
+                    <li class="nav-item active">
+                        <div class="dropdown"><button class="dropbtn">
+                                <a class="nav-link" class="color" href="#">Explore</a>
+                                <div class="dropdown-content">
+                                    <a href="Kitchen.html">Kitchen Interiors</a>
+                                    <a href="Bedroom.html">Bedroom Design</a>
+                                    <a href="living.html">Living Designs</a>
+                                    <a href="office.html">Office Designs</a>
+                                </div>
+                        </div>
+
+                    </li>&emsp;
+                    </li>
+                    <li class="nav-item active">
+                        <div class="dropdown"><button class="dropbtn">
+                                <a class="nav-link" class="color" href="#">Services</a>
+                                <div class="dropdown-content">
+                                    <a href="AboutTeam.html">About Team</a>
+                                </div>
+                        </div>
+
+                    </li>&emsp;
+                    </li>
+                </ul>
+
+
+
+                <!-- <button class=" btn btn-danger btn-outline-warning" id="b1"
+                >Login <i class="fa fa-user-circle-o"
+                    style="font-size:20px;color:black"></i></button>
+            <button class=" btn btn-info btn-outline-warning" id="input"
+                onclick="document.getElementById('id01').style.display='block'" style="width:auto;">New User </button>
+ -->
+
+
+                <button class=" btn btn-danger btn-outline-warning" id="b1" data-toggle="modal"
+                    data-target="#signupModal" style="width:auto;">New User</button>
+                <button class=" btn btn-info btn-outline-warning" id="input" data-toggle="modal"
+                    data-target="#loginModal" data-whatever="@mdo" style="width:auto;">Login</button>
+
+            </nav>
+            <span class="wheel">
+                <i class="fas fa-cog fa-3x  fa-spin"></i></span>
+            <P class="shadow12">Nivati Interiors</P>
+            <span class="wheel">
+                <i class="fas fa-cog fa-3x  fa-spin"></i></span>
+            <section class="social__media">
+                <div id="icons">
+                    <section id="fb" class="box">
+                        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square fa-3x "></i>
+                        </a>&ensp;&nbsp;
+
+                    </section>
+                    <section id="whatsapp" class="box">
+                        <a href="https://www.whatsapp.com/?lang=en"> <i class="fab fa-whatsapp-square fa-3x"></i></a>
+                        &ensp;&nbsp;
+                    </section>
+                    <section id="mail" class="box">
+                        <a href="https://mail.google.com/mail/u/0/">
+                            <i class="fas fa-envelope fa-3x"></i></a>&ensp;&nbsp;
+                    </section>
+                    <section id="linkedin" class="box">
+                        <a href="https://www.linkedin.com/feed/">
+                            <i class="fab fa-linkedin-in fa-3x"></i></a>&ensp;&nbsp;
+                    </section>
+                    <section id="location" class="box">
+                        <a href="https://www.google.com/maps">
+                            <i class="fas fa-map-marker-alt fa-3x"></i></a>&ensp;&nbsp;
+                    </section>
+                </div>
+            </section>
+        </div>
+        <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModal"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="loginModal">Login using your credentials</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+                        <form action="/profile/login" method='post'><input type="hidden" name="csrfmiddlewaretoken"
+                                value="1qiJWtkAVPRlHMBANRdA8sYSEYe4xrUcKMM8bvHvXj9AT9Kd1z9qjt4wR9G8heeh">
+                            <div class="form-group">
+                                <label for="lusername">Username</label>
+                                <input type="name" class="form-control" id="luname" placeholder="Enter your username"
+                                    name="uname">
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" class="form-control" id="lpassword"
+                                    placeholder="Enter your password" name="password">
+                            </div>
+                            <div class="g-recaptcha" data-sitekey="6LdvcqwUAAAAACmPYNVoiJA7D84xLSQQt5g9p10m"></div>
+                            <input type="hidden" name="path" value="/">
+
+                            <button type="submit" class="btn btn-danger mt-2" id="loginsubmit">Login</button>
+                        </form>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModal"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="signupModal">SignUp for an account</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+                        <form name="contact" method="post" action="/profile/signup"><input type="hidden"
+                                name="csrfmiddlewaretoken"
+                                value="1qiJWtkAVPRlHMBANRdA8sYSEYe4xrUcKMM8bvHvXj9AT9Kd1z9qjt4wR9G8heeh">
+
+                            <div class="form-group">
+                                <label for="uname">Username</label>
+                                <input type="text" class="form-control" id="uname" placeholder="Enter your Name"
+                                    name="uname">
+                                <small id="unamehelp" class="form-text text-muted px-1">
+                                    Your unique username must be less than 10 characters (only lowecase letters, numbers
+                                    &
+                                    underscores
+                                    allowed) with no spaces
+                                </small>
+                            </div>
+                            <div class="form-group">
+                                <label for="name">First Name</label>
+                                <input type="text" class="form-control" id="fname" placeholder="Enter your First Name"
+                                    name="fname">
+                            </div>
+                            <div class="form-group">
+                                <label for="name">Last Name</label>
+                                <input type="text" class="form-control" id="lname" placeholder="Enter your Last Name"
+                                    name="lname">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <div class="mx-0">
+                                    <div class="col-md-8 px-0">
+                                        <input type="email" class="form-control" id="email"
+                                            placeholder="Enter your Email" name="email">
+                                        <small id="otpMessage" class="form-text"></small>
+                                    </div>
+                                    <div class="col-md-4 my-1 px-0">
+                                        <button class="btn btn-danger btn-sm mt-2" id="otpbtn">Send OTP</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="form-group">
+                                <label for="otp">Enter OTP</label>
+                                <input type="text" class="form-control" id="otp" placeholder="Enter OTP" name="otp">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="password">Choose a password</label>
+                                <input type="password" class="form-control" id="password"
+                                    placeholder="Choose a password" name="password">
+                            </div>
+                            <div class="form-group">
+                                <label for="password2">Retype a password</label>
+                                <input type="password" class="form-control" id="password2"
+                                    placeholder="Retype your password" name="password2">
+                            </div>
+                            <div class="g-recaptcha" data-sitekey="6LdvcqwUAAAAACmPYNVoiJA7D84xLSQQt5g9p10m"></div>
+                            <input type="hidden" name="path" value="/">
+                            <button type="submit" class="btn btn-danger mt-2">SignUp</button>
+                        </form>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <img src="header images/p1.jpeg" id="image" class="box" style="text-shadow : 2px 2px blue;"></img>
+    <img src="header images/p2.jpeg" id="image" class="box"></img>
+    <img src="header images/p3.jpeg" id="image" class="box"></img>
+    <img src="header images/p5.jpeg" id="image" class="box"></img>
+    <p class="shadow1" id="ki">Kitchen Design</p>
+    <img src="kitchen images/k1.jpeg" id="image" class="box"></img>
+    <img src="kitchen images/k2.jpeg" id="image" class="box"></img>
+    <img src="kitchen images/k3.jpeg" id="image" class="box"></img>
+    <img src="kitchen images/k4.jpeg" id="image" class="box"></img>
+    <img src="kitchen images/k5.jpeg" id="image" class="box"></img>
+    <img src="kitchen images/k6.jpeg" id="image" class="box"></img>
+    <img src="kitchen images/k7.jpeg" id="image" class="box"></img>
+    <img src="kitchen images/k8.jpeg" id="image" class="box"></img>
+    <p class="shadow1">Living Room</p>
+    <img src="living room images/l1.jfif" id="image" class="box">
+    <img src="living room images/l2.jpg" id="image" class="box">
+    <img src="living room images/l3.jpg" id="image" class="box">
+    <img src="living room images/l4.jpg" id="image" class="box">
+    <img src="living room images/l5.jpg" id="image" class="box">
+    <img src="living room images/l6.jpg" id="image" class="box">
+    <img src="living room images/l7.jpg" id="image" class="box">
+    <img src="living room images/l8.jfif" id="image" class="box">
+    <p class="shadow1"> Office Interiors</p>
+    <img src="Office Interiors/o1.jpg" id="image" class="box">
+    <img src="Office Interiors/02.jpg" id="image" class="box">
+    <img src="Office Interiors/o3.jpg" id="image" class="box">
+    <img src="Office Interiors/o4.jpg" id="image" class="box">
+    <img src="Office Interiors/o5.jpeg" id="image" class="box">
+    <img src="Office Interiors/o6.jpg" id="image" class="box">
+    <img src="Office Interiors/o7.png" id="image" class="box">
+    <img src="Office Interiors/o8.jpg" id="image" class="box">
+    <p class="shadow1"> Bedroom Designs</p>
+    <img src="Bedroom Designs/B1.jpg" id="image" class="box">
+    <img src="Bedroom Designs/B2.jpg" id="image" class="box">
+    <img src="Bedroom Designs/B3.jpg" id="image" class="box">
+    <img src="Bedroom Designs/B4.jpg" id="image" class="box">
+    <img src="Bedroom Designs/B5.jpg" id="image" class="box">
+    <img src="Bedroom Designs/B6.jpg" id="image" class="box">
+    <img src="Bedroom Designs/B7.jpg" id="image" class="box">
+    <img src="Bedroom Designs/B8.jpg" id="image" class="box">
+    </div>
+
+    <footer id="footer">
+        <section class="footer_section">
+            <div id="about" style="background-image: url('head.jpg'); background-size: contain; ">
+                <p id="footer_image">
+                    Nivati Interiors</p>
+            </div>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>
